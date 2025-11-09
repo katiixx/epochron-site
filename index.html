@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EPOCHRON — Insight. Innovation. Impact.</title>
+  <meta name="description" content="EPOCHRON is a global multi‑service collective delivering business analytics, business development, website development, DevOps and digital marketing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Option A */
+      --primary:#2E3A59; /* Deep Indigo */
+      --accent:#3A86FF;  /* Electric Blue */
+      --gray:#EDEDED;    /* Soft Gray */
+      --text:#212121;    /* Charcoal */
+      --bg:#FAFAFA;      /* Off White */
+      --radius:18px;
+      --shadow:0 8px 24px rgba(0,0,0,.08);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1120px, 92vw);margin-inline:auto}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(250,250,250,.9);backdrop-filter:blur(8px);border-bottom:1px solid #f2f2f2}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo-mark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(180deg,#57a0ff, #3A86FF);box-shadow:var(--shadow)}
+    .brand-name{font-family:Poppins,Inter,sans-serif;font-weight:700;letter-spacing:.6px;color:var(--primary)}
+    nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
+    nav a{padding:8px 10px;border-radius:12px;font-weight:500}
+    nav a:hover, nav a:focus{background:#f5f7ff;outline:none}
+
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:16px;font-weight:600;border:1px solid transparent;transition:transform .08s ease, box-shadow .2s ease}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-primary:hover{box-shadow:0 12px 24px rgba(58,134,255,.35)}
+    .btn-outline{border-color:var(--primary);color:var(--primary);background:#fff}
+    .btn:active{transform:translateY(1px)}
+
+    .hero{padding:72px 0 48px}
+    .hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+    .eyebrow{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--gray);font-weight:600;color:#4a4a4a}
+    h1{font-family:Poppins,Inter,sans-serif;font-size:clamp(32px,4.2vw,54px);line-height:1.15;margin:18px 0;color:var(--primary)}
+    .lead{font-size:1.125rem;color:#444;max-width:56ch}
+    .hero-cta{display:flex;gap:14px;margin-top:24px;flex-wrap:wrap}
+    .hero-card{background:linear-gradient(160deg,#ffffff, #f9fbff);border:1px solid #eef1ff;border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+
+    section{padding:64px 0}
+    .section-title{font-family:Poppins,Inter,sans-serif;color:var(--primary);font-size:clamp(24px,3vw,36px);margin:0 0 18px}
+    .section-sub{color:#555;margin-bottom:28px}
+
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid #f0f0f7;border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+    .card h3{font-family:Poppins,Inter,sans-serif;margin:10px 0 8px;font-size:1.15rem;color:var(--primary)}
+    .card p{margin:0;color:#555}
+    .icon{width:36px;height:36px;border-radius:12px;background:#eef3ff;display:grid;place-items:center;color:#2d5cff;font-weight:700}
+
+    /* Team */
+    .team{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .member{background:#fff;border:1px solid #eef1ff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+    .avatar{background:#dfe7ff;aspect-ratio:4/3;display:grid;place-items:center;color:#365;height:auto}
+    .member .body{padding:16px}
+    .member h4{margin:0 0 6px;font-family:Poppins,Inter,sans-serif;color:var(--primary)}
+    .member small{color:#5b6;display:block;margin-bottom:6px}
+
+    /* CTA strip */
+    .cta-strip{background:linear-gradient(90deg,#6aa5ff, var(--accent));border-radius:24px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:18px;color:#07224c}
+    .cta-strip h3{margin:0;color:#0c1f3f;font-family:Poppins,Inter,sans-serif}
+
+    /* Contact */
+    .form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .form .full{grid-column:1 / -1}
+    label{font-weight:600;color:#444}
+    input,select,textarea{width:100%;padding:14px 14px;border-radius:14px;border:1px solid #e5e7f2;background:#fff;font:inherit}
+    textarea{min-height:120px}
+    input:focus,select:focus,textarea:focus{outline:3px solid rgba(58,134,255,.25);border-color:var(--accent)}
+    .notice{font-size:.9rem;color:#666}
+
+    footer{padding:24px 0 56px;color:#666}
+    footer .row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+    @media (max-width: 1024px){
+      .hero .wrap{grid-template-columns:1fr}
+      .team{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width: 560px){
+      nav ul{display:none}
+      .cards{grid-template-columns:1fr}
+      .team{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header aria-label="Main header">
+    <div class="container nav">
+      <div class="brand">
+        <span class="logo-mark" aria-hidden="true">
+          <!-- Simple inline mark: vertical bars forming an E -->
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+            <path d="M6 4v16M10 4v16"/>
+            <path d="M14 6h4M14 12h4M14 18h4"/>
+          </svg>
+        </span>
+        <strong class="brand-name" aria-label="EPOCHRON">EPOCHRON</strong>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">About us</a></li>
+          <li><a href="#contact" class="btn btn-outline">Let’s talk</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container wrap">
+        <div>
+          <span class="eyebrow">Global • Multi‑service • On‑demand</span>
+          <h1>Insight. Innovation. Impact.</h1>
+          <p class="lead">EPOCHRON helps teams move from idea to execution across <strong>business analytics</strong>, <strong>business development</strong>, <strong>website development</strong>, <strong>DevOps</strong>, and <strong>digital marketing</strong>.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Start Your Project</a>
+            <a href="#services" class="btn btn-outline" aria-label="View our services">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <img alt="Abstract product + data visual mock" src="https://images.unsplash.com/photo-1551281044-8d8fdc2fd4d5?q=80&w=1200&auto=format&fit=crop" style="border-radius:16px;aspect-ratio:16/10;object-fit:cover"/>
+          <p class="notice" style="margin-top:10px">Design preview • Option A palette</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">What we do</h2>
+        <p class="section-sub">Strategy, build and growth — under one roof. Mix and match services for end‑to‑end outcomes.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="icon">📊</div>
+            <h3>Business Analytics</h3>
+            <p>Turn raw data into decisions with dashboards, forecasting and automated insights in Power BI, Tableau and Looker.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🤝</div>
+            <h3>Business Development</h3>
+            <p>GTM strategy, ICP definition and outbound playbooks that create qualified pipeline and lasting partnerships.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🧩</div>
+            <h3>Website Development</h3>
+            <p>Fast, accessible websites using Next.js/Astro/Shopify with technical SEO, analytics and conversion in mind.</p>
+          </article>
+          <article class="card">
+            <div class="icon">⚙️</div>
+            <h3>DevOps</h3>
+            <p>CI/CD, containerization and cloud infrastructure on AWS/Azure with IaC, security hardening and cost control.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🚀</div>
+            <h3>Digital Marketing</h3>
+            <p>Performance marketing, content and SEO/SEM with clear attribution to grow traffic and revenue, not just clicks.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🛡️</div>
+            <h3>Security & Compliance</h3>
+            <p>Best‑practice hardening, backups and audits to keep your stack resilient and compliant.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM / ABOUT US -->
+    <section id="team">
+      <div class="container">
+        <h2 class="section-title">About us</h2>
+        <p class="section-sub">A lean team with real‑world delivery across analytics, growth, engineering and operations.</p>
+        <div class="team">
+          <article class="member">
+            <div class="avatar" aria-label="Photo placeholder">Add Photo</div>
+            <div class="body">
+              <h4>Dhrumil Sheth</h4>
+              <small>Business Analyst • 5+ years • Australia</small>
+              <p>Transforms business questions into measurable KPIs, forecasts and dashboards that drive decisions across markets.</p>
+            </div>
+          </article>
+          <article class="member">
+            <div class="avatar" aria-label="Photo placeholder">Add Photo</div>
+            <div class="body">
+              <h4>Bhavin Kamothi</h4>
+              <small>Business Development • 3+ years • Ahmedabad</small>
+              <p>Builds predictable pipelines: ICP, outreach, partnerships and deals — focused on sustainable, long‑term growth.</p>
+            </div>
+          </article>
+          <article class="member">
+            <div class="avatar" aria-label="Photo placeholder">Add Photo</div>
+            <div class="body">
+              <h4>Dia Padiya</h4>
+              <small>Digital Marketing & Design • 2+ years • Ahmedabad</small>
+              <p>Crafts on‑brand creative and performance campaigns — from content systems to paid media and landing pages.</p>
+            </div>
+          </article>
+          <article class="member">
+            <div class="avatar" aria-label="Photo placeholder">Add Photo</div>
+            <div class="body">
+              <h4>Kartik Bhatt</h4>
+              <small>DevOps & IT • 3 years • Bangalore</small>
+              <p>Automates delivery with CI/CD, Kubernetes and cloud ops — reliability, security and costs engineered in.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="cta-strip" role="region" aria-label="Get started">
+        <h3>Have a project in mind? Let’s make it real.</h3>
+        <a href="#contact" class="btn btn-primary" aria-label="Jump to contact form">Request a Proposal</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Tell us about your project</h2>
+        <p class="section-sub">Share a few details and we’ll get back within one business day.</p>
+
+        <!-- Netlify Forms wiring (ready for deployment) -->
+        <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+          <div>
+            <label for="name">Full name</label>
+            <input id="name" name="name" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required />
+          </div>
+          <div>
+            <label for="phone">Phone/WhatsApp (optional)</label>
+            <input id="phone" type="tel" name="phone" autocomplete="tel" />
+          </div>
+          <div>
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Business Analytics</option>
+              <option>Business Development</option>
+              <option>Website Development</option>
+              <option>DevOps</option>
+              <option>Digital Marketing</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" placeholder="Goals, timelines, budget range…" required></textarea>
+          </div>
+          <p class="notice full">Your information is kept private. We’ll never share or sell your data.</p>
+          <div class="full"><button class="btn btn-primary" type="submit">Send Inquiry</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container row">
+      <div class="brand" aria-label="EPOCHRON footer mark">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+            <path d="M6 4v16M10 4v16"/>
+            <path d="M14 6h4M14 12h4M14 18h4"/>
+          </svg>
+        </span>
+        <span class="brand-name">EPOCHRON</span>
+      </div>
+      <small>© <span id="year"></span> EPOCHRON. All rights reserved.</small>
+      <div class="social" aria-label="Social links" style="display:flex;gap:10px">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="X">x</a>
+        <a href="#" aria-label="GitHub">gh</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

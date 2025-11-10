@@ -181,14 +181,14 @@
       </div>
     </section>
 
-    <!-- TEAM / ABOUT US -->
+    <!-- TEAM / CORE TEAM -->
     <section id="team">
       <div class="container">
-        <h2 class="section-title">About us</h2>
+        <h2 class="section-title">Core Team</h2>
         <p class="section-sub">A lean team with real‑world delivery across analytics, growth, engineering and operations.</p>
         <div class="team">
           <article class="member">
-            <img class="avatar" src="assets/dhrumil.jpg" alt="Dhrumil Sheth">
+            <img class="avatar" src="assets/members/dhrumil.jpg" alt="Dhrumil Sheth">
             <div class="body">
               <h4>Dhrumil Sheth</h4>
               <small>Business Analyst • 5+ years • Australia experience</small>
@@ -196,7 +196,7 @@
             </div>
           </article>
           <article class="member">
-            <img class="avatar" src="assets/bhavin.jpg" alt="Bhavin Kamothi">
+            <img class="avatar" src="assets/members/bhavin.jpg" alt="Bhavin Kamothi">
             <div class="body">
               <h4>Bhavin Kamothi</h4>
               <small>Business Development • 3+ years • Ahmedabad</small>
@@ -204,7 +204,7 @@
             </div>
           </article>
           <article class="member">
-            <div class="avatar" aria-label="Photo placeholder">Add Photo</div>
+            <img class="avatar" src="assets/members/devarshi.jpg" alt="Devarshi Padiya">
             <div class="body">
               <h4>Devarshi Padiya</h4>
               <small>Digital Marketing & Design • 2+ years • Ahmedabad</small>
@@ -212,7 +212,7 @@
             </div>
           </article>
           <article class="member">
-            <img class="avatar" src="assets/kartik.jpg" alt="Kartik Bhatt">
+            <img class="avatar" src="assets/members/kartik.jpg" alt="Kartik Bhatt">
             <div class="body">
               <h4>Kartik Bhatt</h4>
               <small>DevOps & IT • 3 years • Bangalore</small>
@@ -220,12 +220,39 @@
             </div>
           </article>
           <article class="member">
-            <img class="avatar" aria-label="Photo placeholder">Add Photo</div>
+            <img class="avatar" src="assets/members/mehek.jpg" alt="Mehek Sheth">
             <div class="body">
               <h4>Mehek Sheth</h4>
               <small>Business Development Executive • 2+ years • Ahmedabad</small>
               <p>Focuses on client engagement and lead generation through market research, outreach, and nurturing strategies that build lasting business relationships.</p>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+        <!-- ABOUT US -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-sub">The story behind GOOIT and the values that drive everything we do.</p>
+
+        <div class="cards" style="grid-template-columns:1fr;">
+          <article class="card" style="padding:32px;">
+            <p>
+              At <strong>GOOIT</strong>, we believe innovation happens at the intersection of insight and execution.
+              Founded by a group of professionals with global exposure in business analytics, technology, and marketing,
+              we help organizations bridge the gap between strategy and delivery.
+            </p>
+            <p>
+              From data-driven business decisions and scalable DevOps pipelines to modern websites and creative digital
+              marketing, our goal is to deliver measurable impact—not just activity. Every project we take on is guided
+              by three simple principles: <strong>Insight. Innovation. Impact.</strong>
+            </p>
+            <p>
+              Based in India and collaborating with clients across continents, we bring together the right mix of
+              analytical thinking, technical expertise, and creative storytelling to help businesses grow faster and
+              smarter.
+            </p>
           </article>
         </div>
       </div>
@@ -245,7 +272,7 @@
         <p class="section-sub">Share a few details and we’ll get back within one business day.</p>
 
         <!-- Netlify Forms wiring (ready for deployment) -->
-        <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+        <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" id="contact-form">
           <input type="hidden" name="form-name" value="contact">
           <p style="display:none"><label>Don’t fill this out: <input name="bot-field" /></label></p>
 
@@ -281,6 +308,14 @@
           <div class="full"><button class="btn btn-primary" type="submit">Send Inquiry</button></div>
         </form>
       </div>
+       <!-- OPTIONAL: Netlify reCAPTCHA -->
+      <div data-netlify-recaptcha="true"></div>
+
+      <div class="full">
+        <button class="btn btn-primary" type="submit">Send Inquiry</button>
+      </div>
+    </form>
+  </div>
     </section>
 
     <!-- TESTIMONIALS -->
@@ -312,11 +347,11 @@
         <img src="assets/gooit-logo.png" alt="GOOIT logo" style="height:56px;width:auto;border-radius:10px;box-shadow:var(--shadow);"/>
         <!-- <span class="brand-name">GOOIT</span> -->
       </div>
-      <small>© <span id="year"></span> Shivoham Inc. All rights reserved.</small>
+      <small>© <span id="year"></span> DVIN LIFESTYLE & CO. ALL RIGHTS RESERVED.</small>
       <div class="social" aria-label="Social links" style="display:flex;gap:10px">
         <a href="#" aria-label="LinkedIn">in</a>
-        <a href="#" aria-label="X">x</a>
-        <a href="#" aria-label="GitHub">gh</a>
+        <!-- <a href="#" aria-label="X">x</a>
+        <a href="#" aria-label="GitHub">gh</a> -->
       </div>
     </div>
   </footer>

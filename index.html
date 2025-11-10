@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GOOIT — Insight. Innovation. Impact.</title>
-  <meta name="description" content="GOOIT is a global multi‑service collective delivering business analytics, business development, website development, DevOps and digital marketing." />
+  <title>gOOit — Insight. Innovation. Impact.</title>
+  <meta name="description" content="gOOit is a global multi‑service collective delivering business analytics, business development, website development, DevOps and digital marketing." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
@@ -122,7 +122,7 @@
         <div>
           <span class="eyebrow">Global • Multi‑service • On‑demand</span>
           <h1>Insight. Innovation. Impact.</h1>
-          <p class="lead">GOOIT helps teams move from idea to execution across <strong>business analytics</strong>, <strong>business development</strong>, <strong>website development</strong>, <strong>DevOps</strong>, and <strong>digital marketing</strong>.</p>
+          <p class="lead">gOOit helps teams move from idea to execution across <strong>business analytics</strong>, <strong>business development</strong>, <strong>website development</strong>, <strong>DevOps</strong>, and <strong>digital marketing</strong>.</p>
           <div class="hero-cta">
             <a href="#contact" class="btn btn-primary">Start Your Project</a>
             <a href="#services" class="btn btn-outline" aria-label="View our services">Explore Services</a>
@@ -164,8 +164,18 @@
           </article>
           <article class="card">
             <div class="icon">⚙️</div>
-            <h3>DevOps</h3>
+            <h3>DevOps & IT</h3>
             <p>CI/CD, containerization and cloud infrastructure on AWS/Azure with IaC, security hardening and cost control.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🤖</div>
+            <h3>AI / ML Solutions</h3>
+            <p>Intelligent automation and predictive modeling using Python, TensorFlow, and cloud AI services to optimize decision-making and operations.</p>
+          </article>
+            <div class="icon">📱</div>
+            <article class="card">
+            <h3>App Development</h3>
+            <p>End-to-end mobile app design and development for iOS and Android — built with Flutter or React Native for seamless cross-platform experiences.</p>
           </article>
           <article class="card">
             <div class="icon">🚀</div>
@@ -191,7 +201,7 @@
             <img class="avatar" src="assets/members/dhrumil.jpg" alt="Dhrumil Sheth">
             <div class="body">
               <h4>Dhrumil Sheth</h4>
-              <small>Business Analyst • 5+ years • Australia experience</small>
+              <small>Business Analyst • 5+ years • Australia</small>
               <p>Transforms business questions into measurable KPIs, forecasts and dashboards that drive decisions across markets.</p>
             </div>
           </article>
@@ -234,24 +244,25 @@
     <section id="about">
       <div class="container">
         <h2 class="section-title">About Us</h2>
-        <p class="section-sub">The story behind GOOIT and the values that drive everything we do.</p>
+        <p class="section-sub">The story behind gOOit and the values that drive everything we do.</p>
 
         <div class="cards" style="grid-template-columns:1fr;">
           <article class="card" style="padding:32px;">
             <p>
-              At <strong>GOOIT</strong>, we believe innovation happens at the intersection of insight and execution.
-              Founded by a group of professionals with global exposure in business analytics, technology, and marketing,
-              we help organizations bridge the gap between strategy and delivery.
+              Founded in 2022, gOOit is a professional IT company committed to delivering innovative and reliable 
+              technology solutions. With extensive experience across diverse projects and industries, we specialize
+              in advanced technologies such as Artificial Intelligence (AI) and Machine Learning (ML).
+
             </p>
             <p>
-              From data-driven business decisions and scalable DevOps pipelines to modern websites and creative digital
-              marketing, our goal is to deliver measurable impact—not just activity. Every project we take on is guided
-              by three simple principles: <strong>Insight. Innovation. Impact.</strong>
+              At gOOit, we believe that technology is a powerful tool to create a better and more connected world. 
+              Our team of skilled professionals is dedicated to providing high-quality, result-oriented solutions 
+              that empower businesses to grow and adapt in the ever-evolving digital landscape.
+
             </p>
             <p>
-              Based in India and collaborating with clients across continents, we bring together the right mix of
-              analytical thinking, technical expertise, and creative storytelling to help businesses grow faster and
-              smarter.
+              We are driven by innovation, guided by expertise, and focused on excellence — transforming ideas into 
+              impactful digital realities.
             </p>
           </article>
         </div>
@@ -295,7 +306,9 @@
               <option>Business Analytics</option>
               <option>Business Development</option>
               <option>Website Development</option>
-              <option>DevOps</option>
+              <option>DevOps & IT</option>
+              <option>AI / ML</option>
+              <option>App Development</option>
               <option>Digital Marketing</option>
               <option>Other</option>
             </select>
@@ -305,17 +318,17 @@
             <textarea id="message" name="message" placeholder="Goals, timelines, budget range…" required></textarea>
           </div>
           <p class="notice full">Your information is kept private. We’ll never share or sell your data.</p>
-          <div class="full"><button class="btn btn-primary" type="submit">Send Inquiry</button></div>
+          <!-- Make reCAPTCHA span full width -->
+          <div class="full recaptcha">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+
+          <!-- Single submit button AFTER reCAPTCHA -->
+          <div class="full">
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          </div>
         </form>
       </div>
-       <!-- OPTIONAL: Netlify reCAPTCHA -->
-      <div data-netlify-recaptcha="true"></div>
-
-      <div class="full">
-        <button class="btn btn-primary" type="submit">Send Inquiry</button>
-      </div>
-    </form>
-  </div>
     </section>
 
     <!-- TESTIMONIALS -->
@@ -325,7 +338,7 @@
         <p class="section-sub">A few words from teams we’ve helped launch, scale and optimize.</p>
         <div class="cards">
           <article class="card">
-            <p>“GOOIT turned our scattered data into a single source of truth. Leadership finally makes decisions with confidence.”</p>
+            <p>“gOOit turned our scattered data into a single source of truth. Leadership finally makes decisions with confidence.”</p>
             <h3 style="margin-top:12px">— Priya N., COO</h3>
           </article>
           <article class="card">
